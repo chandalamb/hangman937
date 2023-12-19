@@ -108,7 +108,10 @@ while (True):
     break
 pass
 
-# The 'if__name__ =='
+# The 'if__name__ =='__main__': block is used to ensure that the code inside it is only executed if the script is run directly and not if it is imported as module.
+.f __name__ == '__main__':
+    word_list = ["mango", "banana", "papaya", "grapes", "lychee", "pineapple", "coconut", "orange", "watermelon"]
+play_game(word_list)
 
 
 
