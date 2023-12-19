@@ -23,7 +23,7 @@ def ask_for_input():
       print("That is a valid input.")
       break
     else:
-      print("Oops! That is not as valid input. Try again.")
+      print("Oops! That is not as valid input. Please enter a single alphabetical character.")
   check_guess()
 
 ask_for_input()
