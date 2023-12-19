@@ -89,6 +89,26 @@ def ask_for_input(self):
       print("Already guess letters:", self.list_of_guesses)
   pass
 
+def play_game(word_list):
+  """
+  The function "play_game" allows the user to play a game of Hangman using a given word list.
+
+  :param word_list: The word_list parameter is a list if words that the Hangman game will choose from.
+  Each word in the list represents a possible word for the player to guess
+  """
+num_lives = 5
+game = Hangman(word_list, num_lives = 5)
+while (True):
+  if game.num_lives == 0:
+    print ("Sorry! You loose.")
+    break
+  elif game.num_lives != 0 and game.num_letters != 0:
+    print ("Congratulations, you've won!")
+    print("The word was,",game.word,".")
+    break
+pass
+
+# The 'if__name__ =='
 
 
 
